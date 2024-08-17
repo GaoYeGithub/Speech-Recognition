@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Speech recognition app</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
+  </head>
+  <body>
+    <div class="main-container">
+      <div>
+        <button id="btnStartRecord">START</button>
+        <button id="btnStopRecord">STOP</button>
+        <button id="btnPauseRecord">PAUSE</button>
+        <button id="btnResumeRecord">RESUME</button>
+        <button id="btnClearText">CLEAR</button>
+      </div>
+      <div>
+        <button id="btnSaveText">SAVE</button>
+        <button id="btnExportPDF">EXPORT PDF</button>
+        <button id="playText">PLAY</button>
+        <button id="toggleDarkMode">DARK MODE</button>
+      </div>
+      <div>
+        <label for="speechRate">Speech Rate:</label>
+        <input type="range" id="speechRate" min="0.1" max="3" step="0.5" value="1">
+      </div>
+      <div>
+        <textarea id="text" cols="30" rows="10"></textarea>
+      </div>
+      <div>
+        <p id="wordCount">Word Count: 0</p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
